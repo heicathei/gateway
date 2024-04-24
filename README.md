@@ -1,4 +1,4 @@
-网关服务
+#网关服务
 
 该项目是一个网关服务，用于将请求转发到指定的目标服务。它具有以下特点：
 
@@ -6,17 +6,16 @@
 多用途：可以作为各种地方的网关，例如 share、mirror 等。
 使用 Docker 部署
 
-构建 Docker 镜像：
-
-首先，确保你已经安装了 Docker。然后在项目根目录执行以下命令构建 Docker 镜像：
-
-docker build -t hei782/gateway:1.2 .
+##docker pull hei782/gateway:1.2
 
 运行 Docker 容器：
 
 运行以下命令启动网关服务的 Docker 容器：
 
-docker run -d -p 7999:7999 --name gateway -e PROXY=http://your-proxy-address:port hei782/gateway:1.2
+docker run -d -p 7999:7999 \
+           -e "PROXY=http://your-proxy-address:port" \
+           --name gateway \
+           hei782/gateway:1.2
 
 将 "http://your-proxy-address:port" 替换为可访问 GPT 的代理地址。
 
