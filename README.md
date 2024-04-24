@@ -22,6 +22,7 @@
 
    ```bash
    docker pull hei782/gateway:1.2
+   
 2.运行以下命令启动网关服务的 Docker 容器：
 
 ```bash
