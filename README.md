@@ -23,13 +23,14 @@
    ```bash
    docker pull hei782/gateway:1.2
    
-2.运行以下命令启动网关服务的 Docker 容器：
+2. 在命令行中执行以下命令启动网关服务：
 
    ```bash
    docker run -d -p 7999:7999 \
               -e "PROXY=http://your-proxy-address:port" \
               --name gateway \
               hei782/gateway:1.2
+
 
 将 "http://your-proxy-address:port" 替换为可访问 GPT 的代理地址。
 
