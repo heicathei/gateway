@@ -15,19 +15,18 @@
 
    ```bash
    docker-compose up
-   ```bash
 ### 2. 手动拉取镜像并运行容器
+
 1. 首先，拉取网关服务的 Docker 镜像：
-```bash
-docker pull hei782/gateway:1.2
-```bash
+
+   ```bash
+   docker pull hei782/gateway:1.2
 2.运行以下命令启动网关服务的 Docker 容器：
 ```bash
 docker run -d -p 7999:7999 \
            -e "PROXY=http://your-proxy-address:port" \
            --name gateway \
            hei782/gateway:1.2
-```bash
 将 "http://your-proxy-address:port" 替换为可访问 GPT 的代理地址。
 
 ## 访问网关服务：
