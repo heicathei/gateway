@@ -15,7 +15,7 @@
 
    ```bash
    docker-compose up
-   
+   ```bash
 ### 2. 手动拉取镜像并运行容器
 1. 首先，拉取网关服务的 Docker 镜像：
 ```bash
