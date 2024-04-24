@@ -6,15 +6,23 @@
 多用途：可以作为各种地方的网关，例如 share、mirror 等。
 
 ## 使用 Docker 部署
-1、直接下载docker-compose.yaml
-执行命令 docker-compose up
 
-2、拉取镜像
+### 1. 使用 docker-compose 部署
+
+1. 直接下载 [docker-compose.yaml](link-to-your-docker-compose-file) 文件。
+
+2. 在命令行中执行以下命令启动网关服务：
+
+   ```bash
+   docker-compose up
+   
+### 2. 手动拉取镜像并运行容器
+1. 首先，拉取网关服务的 Docker 镜像：
+```bash
 docker pull hei782/gateway:1.2
 
-运行 Docker 容器：
-
-运行以下命令启动网关服务的 Docker 容器：
+2.运行以下命令启动网关服务的 Docker 容器：
+```bash
 docker run -d -p 7999:7999 \
            -e "PROXY=http://your-proxy-address:port" \
            --name gateway \
