@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  gateway:
+    image: hei782/gateway:1.2
+    ports:
+      - "7999:7999"
+    environment:
+      - PROXY=PROXY #将PROXY替换成可以访问gpt的代理地址
+      
