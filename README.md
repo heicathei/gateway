@@ -1,6 +1,6 @@
 # 网关服务
 ## 提示：
-网关中的登录获取token基于网关：https://www.topheiai.top/getsession
+网关中的登录获取token基于网关：https://www.topheiai.top/getsession ，
 介意请绕行，不要像某些小人认为我为了偷账号
 
 该项目是一个网关服务，用于请求转发功能。它具有以下特点：
