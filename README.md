@@ -26,7 +26,7 @@
 1. 首先，拉取网关服务的 Docker 镜像：
 
    ```bash
-   docker pull hei782/gateway:1.2
+   docker pull hei782/gateway:1.3
    
 2. 在命令行中执行以下命令启动网关服务：
 
@@ -34,10 +34,11 @@
    docker run -d -p 7999:7999 
               -e "PROXY=http://your-proxy-address:port" 
               --name gateway 
-              hei782/gateway:1.2
+              hei782/gateway:1.3
 
 
 将 "http://your-proxy-address:port" 替换为可访问 GPT 的代理地址。
+没有代理可以试试这个，每天有免费额度：https://my.socks5.io/
 
 ## 访问网关服务：
 
