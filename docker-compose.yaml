@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   gateway:
-    image: hei782/gateway:1.2
+    image: hei782/gateway:1.3
     ports:
       - "7999:7999"
     environment:
